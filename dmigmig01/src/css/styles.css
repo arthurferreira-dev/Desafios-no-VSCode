@@ -1,0 +1,319 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Minecraft';
+    src: url('../fonts/minecraft/Minecraft.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+    gap: 10px;
+}
+
+@font-face {
+    font-family: 'GameShow';
+    src: url('../fonts/gameshow/Gameshow\ Italic.ttf') format(truetype), url('/fonts/gameshow/Gameshow\ Italic.otf') format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Minecraftory';
+    src: url('/src/fonts/minercraftory/Minercraftory.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Spring Rainstorm';
+    src: url('/src/fonts/spring_rainstorm/Spring\ Rainstorm.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --font-minecraft-default: 'Minecraft', Arial, sans-serif;
+    --font-minecraft-destaque: 'Minecraftory', Verdana, sans-serif;
+    --font-gameshow: 'GameShow', cursive, sans-serif;
+    --font-Winky-Sans: 'Winky Sans', sans-serif;
+    --font-spring-rainstorm: 'Spring Rainstorm', Arial, sans-serif;
+
+    --color-white: #fff;
+    --color-black: #000;
+
+    --main-back: #3e3838;
+    --footer-back: #4B2C28;
+}
+
+body {
+    background-color: #7b7b7b;
+}
+
+header {
+    background-image: url(/src/imgs/minecraft-grass.jpg);
+    background-attachment: fixed;
+    padding-top: 3.5px;
+    padding-bottom: 7.4px;
+}
+
+nav {
+    background-image: url(/src/imgs/minecraft-grass.jpg);
+    background-attachment: fixed;
+    padding: 4.5px;
+}
+
+nav > a {
+    color: var(--color-black);
+    font-family: var(--font-minecraft-destaque);
+    font-weight: 400;
+    background-color: #2d68de;
+    padding: 5px;
+    padding-bottom: 1px;
+    border-radius: 4.5px;
+    margin-right: 7px;
+}
+
+nav > a:hover {
+    background-color: #285bc2;
+    color: #191919;
+}
+
+a#ideias::after {
+    content: '\00A0\1F4A1';
+}
+
+a#patron::after {
+    content: '\00A0\1F917';
+}
+
+h1#h1-gamenews {
+    font-family: var(--font-gameshow);
+    color: var(--color-black);
+    font-size: 4.2em;
+    padding-top: 19px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+p#p-minecraft {
+    font-family: var(--font-minecraft-destaque);
+    font-size: 1.85em;
+    color: var(--color-white);
+    text-shadow: 4.5px 6px 7px #00000089;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    background-color: var(--main-back);
+    font-family: var(--font-minecraft-default);
+    color: var(--color-white);
+    width: 57%;
+    height: 100%;
+    padding: 10px;
+    margin: auto;
+}
+
+main h1 {
+    margin: 15px 0px;
+    text-align: left;
+    line-height: 1.5em;
+    font-size: 1.30em;
+    font-weight: 400;
+    gap: 15px;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    line-height: 1.5em;
+    font-size: 1.14em;
+    text-align: justify;
+    font-weight: 400;
+    gap: 15px;
+}
+
+strong {
+    font-weight: 400;
+}
+
+p#p-alert {
+    text-align: center;
+    font-family: var(--font-Winky-Sans);
+    font-size: 0.71em;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 1.5px;
+    border-radius: 3.4px;
+    transition-duration: 0.5s;
+}
+
+p#p-alert:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+span.alert {
+    color: #ffff00;
+    font-weight: lighter;
+    font-size: 1.44em;
+}
+
+em#spring-color {
+    color: green;
+}
+
+#marrons {
+    color: #261615;
+    text-shadow: 7px 2px 6px #00000093;
+}
+
+#pretas {
+    color: #000;
+}
+
+footer {
+    background-image: url(/src/imgs/minecraft-grass.jpg);
+    background-attachment: fixed;
+    height: 100%;
+    padding: 6.5px;
+}
+
+aside a {
+    font-family: var(--font-Winky-Sans);
+    font-size: 1.65em;
+    transition: all 0.56s;
+}
+
+a#dafont {
+    color: #ff0000;
+}
+
+a#dafont:hover {
+    color: #a51d1d;
+}
+
+a#adobe-colors {
+    color: var(--color-black);
+}
+
+a#adobe-colors:hover {
+    color: #999999;
+}
+
+a#awesome-link {
+    color: #2d68de;
+}
+
+a#awesome-link:hover {
+    color: #285bc2;
+}
+
+#icon-pallet {
+    color: #dfc352;
+}
+
+#icon-txt-a {
+    color: var(--color-black);
+}
+
+a#emojipedia {
+    color: #f56600;
+}
+
+a#emojipedia:hover {
+    color: #c6c606;
+}
+
+a#mine-1-21-5 {
+    color: #1df31d;
+}
+
+a#mine-1-21-5:hover {
+    color: #09af09;
+}
+
+#windows-italic-icon {
+    color: #3f76e5;
+}
+
+img#img-mine-live {
+    display: block;
+    height: 333px;
+    margin: auto;
+    border-radius: 4.5px;
+    transition-duration: 0.68s;
+}
+
+img#img-mine-live:hover {
+    scale: 1.15;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+aside {
+    background-image: url(/src/imgs/minecraft-grass.jpg);
+    background-attachment: fixed;
+    width: 333px;
+    margin: auto;
+    padding: 6px;
+}
+
+aside h1 {
+    margin: 8px 0px;
+    text-align: justify;
+    font-family: var(--font-minecraft-destaque);
+    font-size: 2em;
+    text-align: left;
+    font-weight: 400;
+    gap: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+li.lis {
+    font-size: 0.9em;
+}
+
+li.versions {
+    font-family: var(--font-Winky-Sans);
+    color: var(--color-white);
+    text-shadow: 5px 4px 6px #000000d1;
+}
+
+h1#versions-h1 {
+    color: #cdcdcd;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+abbr:hover {
+    text-decoration: underline;
+}
+
+strong.strongs {
+    font-weight: 300;
+}
+
+p#footer-copy {
+    font-family: var(--font-spring-rainstorm);
+    font-size: 1.46em;
+    text-align: center;
+    padding-right: 10px;
+    gap: 20px;
+}

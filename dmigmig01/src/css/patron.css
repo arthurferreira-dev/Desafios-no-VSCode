@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Minecraft';
+    src: url('../fonts/minecraft/Minecraft.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+    gap: 10px;
+}
+
+@font-face {
+    font-family: 'GameShow';
+    src: url('/src/fonts/gameshow/Gameshow.ttf') format(truetype), url('/fonts/gameshow/Gameshow\ Italic.otf') format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Minecraftory';
+    src: url('/src/fonts/minercraftory/Minercraftory.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geoform Bold Italic';
+    src: url('/src/fonts/geoform/Geoform-BoldItalic.otf') format(opentype);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geoform';
+    src: url('/src/fonts/geoform/Geoform.otf') format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --font-minecraft-default: 'Minecraft', Arial, sans-serif;
+    --font-minecraft-destaque: 'Minecraftory', Verdana, sans-serif;
+    --font-gameshow: 'GameShow', cursive, sans-serif;
+    --font-Winky-Sans: 'Winky Sans', sans-serif;
+
+    --color-white: #fff;
+    --color-black: #000;
+
+    --main-back: #404040;
+    --footer-back: #4B2C28;
+}
+
+body {
+    background-image: url(/src/imgs/outrun-neon-dark-background-purple-3840x2160.jpg);
+    background-attachment: fixed;
+}
+
+nav {
+    background-color: var(--color-black);
+    padding: 4.8px;
+}
+
+nav > a {
+    color: var(--color-black);
+    font-family: var(--font-minecraft-destaque);
+    font-weight: 400;
+    background-color: #2d68de;
+    padding: 5px;
+    padding-bottom: 1px;
+    border-radius: 4.5px;
+    margin-right: 7px;
+}
+
+nav > a:hover {
+    background-color: #285bc2;
+    color: #191919;
+}
+
+a#ideias::after {
+    content: '\00A0\1F4A1';
+}
+
+a#home::after {
+    content: '\00A0\1F3E0';
+}
+
+h1#h1-gamenews {
+    font-family: var(--font-gameshow);
+    color: var(--color-white);
+    font-size: 4.2em;
+    padding-top: 19px;
+}
+
+p#p-header {
+    color: var(--color-white);
+    font-family: 'Geoform Bold Italic', Verdana, sans-serif;
+    font-size: 1.2em;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+main {
+    margin: auto;
+    background-color: var(--main-back);
+    height: 100%;
+    width: 44%;
+    padding: 4.4px 6.5px;
+    font-family: 'Geoform', cursive;
+    color: var(--color-white);
+    border-radius: 3.7px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1#mult {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 800;
+    font-size: 1.45em;
+    color: #8346fc;
+    transition-duration: 0.69s;
+}
+
+h1#mult:hover {
+    text-decoration: underline;
+}
+
+img {
+    display: block;
+    margin: auto;
+    border-radius: 4.5px;
+    transition-duration: 0.6s;
+}
+
+img:hover {
+    scale: 1.16;
+}
+
+#yt-icon {
+    color: #ff0000;
+    background-color: #fff;
+    border-radius: 8px 8px 8px 8px;
+    padding: 4px;
+}
+
+#verificado {
+    color: #0db30d;
+    background-color: #f8f8f8;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 0.93em;
+}
+
+p.description {
+    margin-top: 10px;
+    text-indent: 16px;
+    text-align: justify;
+}
