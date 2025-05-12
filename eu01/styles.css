@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+menu {
+    margin-top: 12px;
+    margin-right: 40px;
+}
+
+ol, ul {
+    list-style-type: none;
+}
+
+ul > li {
+    display: inline-block;
+    font-size: 1.6em;
+    padding: 0px 8px;
+}
+
+ul {
+    text-align: center;
+}
+
+ul#container-icons * {
+    transition: scale 300ms, filter 300ms;
+}
+
+ul#container-icons:has(:hover) :not(:hover) {
+    scale: 0.9;
+    filter: blur(0.66px);
+}
