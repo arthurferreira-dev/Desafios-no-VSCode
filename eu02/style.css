@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+body {
+    background-image: linear-gradient(to right, #09293f, #537895);
+    background-attachment: fixed;
+}
+
 .card {
     margin: auto;
     width: 550px;
@@ -19,12 +24,12 @@
 }
 
 .title {
-    height: 15px;
+    height: 20px;
     margin-bottom: 15px;
 }
 
 .description {
-    height: 100px;
+    height: 200px;
 }
 
 @keyframes shimmer {
