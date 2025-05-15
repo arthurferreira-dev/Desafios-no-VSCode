@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: brown;
+    
+}
+
+aside#asideone {
+    display: none;
+    background-color: #d4d4d4;
+    width: 29%;
+    padding: 6px;
+    margin: 0px 2px 2px 0px;
+    border-radius: 2px;
+    line-height: 1.5em;
+}
+
+img#pexels {
+    display: block;
+    margin-left: 430px;
+    margin-top: 100px;
+    width: 35%;
+    transition-duration: .3s;
+}
+
+div#x-mark {
+    display: none;
+    padding-left: 950px;
+    margin-top: -280px;
+}
+
+i {
+    font-size: 1.5em;
+    background-color: #d5d5d5b7;
+    padding: 4px;
+    border-radius: 7px;
+}
