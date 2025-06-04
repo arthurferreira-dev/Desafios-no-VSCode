@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário no HTML5 pro PHP8</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main>
+        <h1>Preencha o Formulário a seguir:</h1>
+        <form action="php/form.php" method="post">
+            <label for="name">Nome: </label>
+            <input type="text" min="4" name="phpname" id="name">
+
+            <label for="sbname">Sobrenome: </label>
+            <input type="text" min="4" name="phpsbname" id="sbname">
+
+            <label for="year">Idade: </label>
+            <input type="number" min="1" max="120" name="phpyear" id="year">
+
+            <label for="color">Sua cor favorita: </label>
+            <br>
+            <input type="color" name="phpclr" id="color" style="margin: auto; display: block; width: 70%; height: 40px;">
+            <br>
+
+            <input type="submit" value="Enviar seu Formulário">
+        </form>
+    </main>
+</body>
+</html>
